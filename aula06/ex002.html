@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu primeiro Programa...</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            text-shadow: 4px 4px 3px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola, Mundo!!!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        var num1 = Number(window.prompt(`Por favor ${nome} digite um numero`))
+        var num2 = Number(window.prompt('Você digitou o numero ' + num1 + ', agora digite outro numero'))   
+        window.alert(`Ola ${nome}, Bem Vindo, a soma dos numeros que você digitou é ${num1 + num2}`)
+
+    </script>
+</body>
+</html>

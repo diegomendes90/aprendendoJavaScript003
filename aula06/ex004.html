@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = (window.prompt('Qual é o seu nome?'))
+        document.write(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras </br>`)
+        document.write(`O seu nome em maiusculo é ${nome.toUpperCase()} </br>`)
+        document.write(`O seu nome em minusculo é ${nome.toLowerCase()} </br></br>`)
+        document.write(`Valendo 1 real por letra você teria <strong>${nome.length.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</strong></br>`)
+        document.write(`Valendo 1 dolar por letra você teria <strong>${nome.length.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}</strong></br>`)
+        document.write(`Valendo 1 euro por letra você teria <strong>${nome.length.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}</strong>`)
+    </script>
+</body>
+</html>
